@@ -1,0 +1,22 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="{% static 'css/scorelist.css' %}">
+    <title>排行榜</title>
+</head>
+<body>
+<div class="scorelist">
+    <h2>排行榜</h2>
+    <table>
+    </table>
+    <button id="lastpage">上一页</button>
+    <button id="nextpage">下一页</button>
+</div>
+<script src="{% static 'js/jquery.min.js' %}"></script>
+<script src="{% static 'js/scorelist.js' %}"></script>
+</body>
+</html>

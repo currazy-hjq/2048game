@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>2048游戏</title>
+    {% load static %}
+    <link href="{% static 'css/game2048.css' %}" media="all" rel="stylesheet"/>
+    <!-- <link rel="stylesheet" href="{% static 'css/game2048.css' %}"> -->
+</head>
+<body>
+<h3 id="score">分数：0</h3>
+<div id="namebox">
+</div>
+<div class="g2048">
+    <div class="cell"></div>
+    <div class="cell"></div>
+    <div class="cell"></div>
+    <div class="cell"></div>
+    <div class="cell"></div>
+    <div class="cell"></div>
+    <div class="cell"></div>
+    <div class="cell"></div>
+    <div class="cell"></div>
+    <div class="cell"></div>
+    <div class="cell"></div>
+    <div class="cell"></div>
+    <div class="cell"></div>
+    <div class="cell"></div>
+    <div class="cell"></div>
+    <div class="cell"></div>
+    <div class="map"></div>
+</div>
+<div class="footer">
+    <button id="scorelist" type="button">排行榜</button>
+    <button id="submitscore" type="button">提交成绩</button>
+    <button id="gamebutton" type="button">开始游戏</button>
+</div>
+<script src="{% static 'js/jquery.min.js' %}"></script>
+<script src="{% static 'js/game2048.js' %}"></script>
+</body>
+</html>
