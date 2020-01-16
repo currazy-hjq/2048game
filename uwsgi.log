@@ -4047,3 +4047,5 @@ Not Found: /
 [pid: 29978|app: 0|req: 410/428] 119.114.60.79 () {42 vars in 788 bytes} [Thu Jan 16 16:06:40 2020] GET / => generated 2134 bytes in 3 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 1)
 Not Found: /index.php
 [pid: 29978|app: 0|req: 411/429] 119.114.60.79 () {42 vars in 816 bytes} [Thu Jan 16 16:06:41 2020] GET /index.php => generated 2179 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /
+[pid: 29978|app: 0|req: 412/430] 37.6.90.74 () {32 vars in 442 bytes} [Thu Jan 16 16:13:56 2020] GET / => generated 2137 bytes in 3 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
