@@ -15,7 +15,7 @@ $('#gamebutton').click(function () {
         type: 'get',
         datatype: JSON,
         // url:baseurl+'/play',
-        url: 'http://111.229.46.201:8000/game2048/init',
+        url: 'http://111.229.46.201/game2048/init',
         success: function (response) {
             var temp = JSON.stringify(response)
             var data = JSON.parse(temp)
@@ -36,7 +36,7 @@ $('#submitscore').click(function (){
         $.ajax({
             type:'post',
             datatype:JSON,
-            url:'http://111.229.46.201:8000/scorelist/add',
+            url:'http://111.229.46.201/scorelist/add',
             data :JSON.stringify({'player':player,'score':score}),
             success:function(response){
                 var temp = JSON.stringify(response)
@@ -82,7 +82,7 @@ function keydown(event) {
             type: 'post',
             datatype: JSON,
             // url:baseurl+'/play',
-            url: 'http://111.229.46.201:8000/game2048/play',
+            url: 'http://111.229.46.201/game2048/play',
             data :JSON.stringify({'dir':dir,'map':gamemap}) ,
             success: function (response) {
                 var temp = JSON.stringify(response)
@@ -102,6 +102,6 @@ function keydown(event) {
 }
 
 $('#scorelist').click(function () {
-    window.open('http://111.229.46.201:8000/scorelist/init')
+    window.open('http://111.229.46.201/scorelist/init')
 })
 

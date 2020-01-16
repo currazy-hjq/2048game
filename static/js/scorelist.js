@@ -4,7 +4,7 @@ function loadlist(pageindex){
     $.ajax({
         type: 'get',
         // dataType: JSON,
-        url: 'http://111.229.46.201:8000/scorelist/show?page='+String(pageindex),
+        url: 'http://111.229.46.201/scorelist/show?page='+String(pageindex),
         success: function(response){
             var temp = JSON.stringify(response)
             var data = JSON.parse(temp)
